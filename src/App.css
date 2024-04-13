@@ -1,0 +1,66 @@
+/* App.css */
+
+/* Base styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Button styles */
+.tickle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Content styles */
+.full-page-content {
+  width: 100%; /* Ensure full width */
+  max-width: 100%; /* Ensure full width */
+  height: 100vh; /* Ensure full height of the viewport */
+  overflow-y: auto; /* Enable vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 1vmin);
+  }
+  .App-logo {
+    height: 30vmin;
+  }
+  .tickle-button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App-logo {
+    height: 25vmin;
+  }
+  .tickle-button {
+    font-size: 14px;
+  }
+}
+/* App.css */
+
+/* Hide scrollbar for the entire page */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for WebKit based browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
+}
